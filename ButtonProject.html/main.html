@@ -1,0 +1,198 @@
+<!-- // Tre Howard // CSC102 // 6-3-22 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="StartStop.js"></script> <!-- added .js and .css to html -->
+    <link rel="stylesheet" href="ButtonProject.css">
+    <title>Button Project</title>
+
+
+</head>
+<body>
+    <!-- added logo at top -->
+    <h1><img src="UATspaceLogo-2.jpg"></h1>
+
+
+    <!-- code for table, thead for two types of data types, tbody/td for each input (have no idea how to reduce this code....) -->
+    <h2>Data Table</h2>
+    <table>
+        <thead>
+            <tr>
+            <th>Data Type</th>
+            <th>Reading</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+            <td>Time Elapsed:</td>
+            <td>15 seconds</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Latitude:</td>
+            <td>0</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Longitude:</td>
+            <td>0</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>GPS Altitude:</td>
+            <td>0</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>BMP Sensor Altitude:</td>
+            <td>30383.04</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>BMP Sensor Pressure:</td>
+            <td>2.34</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>BMP Sensor Temperature:</td>
+            <td>0</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Digital Sensor Temperature:</td>
+            <td>24.12</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>CSS Sensor Temperature:</td>
+            <td>25</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>CSS Sensor eC02:</td>
+            <td>0</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>CSS Sensor TVOC:</td>
+            <td>0</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>UV:</td>
+            <td>0</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Accel X:</td>
+            <td>-0.87</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Accel Y:</td>
+            <td>-0.02</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Accel Z:</td>
+            <td>9.61</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Magnetic X:</td>
+            <td>0.13</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Magnetic Y:</td>
+            <td>0.57</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Magnetic Z:</td>
+            <td>-0.24</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Gyro X:</td>
+            <td>4.66</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Gyro Y:</td>
+            <td>0.01</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+            <td>Gyro Z:</td>
+            <td>-0.4</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+
+    <!-- stop button starts disabled, click start, disables itself and activates stop button, check StartStop.js -->
+    <h3>
+        <button id="Start" onclick = "Start()">Start</button>
+        <button id="Stop" onclick = "Stop()" disabled>Stop</button>
+    </br>
+
+    <!-- imports background sound, plays on loop after clicking play once, i left the control panel on due to annoyance/sound volume -->
+    <audio loop controls src="us-lab-background.mp3"></audio>
+
+
+    <!-- <audio autoplay loop controls src="us-lab-background.mp3"></audio> this is old code with autoplay, but again, didnt want to annoy people with sound constantly if they didnt want it, so put control panel up -->
+    </h3>
+
+
+</body>
+</html>
